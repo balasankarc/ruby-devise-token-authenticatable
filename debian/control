@@ -1,0 +1,28 @@
+Source: ruby-devise-token-authenticatable
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-devise (>= 3.4.0),
+               ruby-rspec
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-devise-token-authenticatable.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-devise-token-authenticatable.git
+Homepage: https://github.com/baschtl/devise-token_authenticatable
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-devise-token-authenticatable
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-devise (>= 3.4.0),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Provides authentication based on an authentication token for devise 3.2 and up.
+ This gem provides the extracted Token Authenticatable module of devise.
+ It enables the user to sign in via an authentication token. This token
+ can be given via a query string or HTTP Basic Authentication.

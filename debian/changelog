@@ -1,0 +1,5 @@
+ruby-devise-token-authenticatable (0.4.0-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #nnnn)
+
+ -- Balasankar C <balasankarc@autistici.org>  Thu, 02 Jul 2015 20:39:04 +0530
